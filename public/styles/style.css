@@ -40,8 +40,28 @@ body {
 }
 
 .results-container {
-	margin: 20px;
-	padding: 10px;
+	display: grid;
+	grid-template: auto / repeat(3, 1fr);
+	gap: 20px;
 
-	border-radius: 5px;
+	padding: 10px;
+}
+.result-card {
+	border: 1px solid black;
+	border-radius: 10px;
+
+	padding: 15px;
+
+	transition-duration: .3s;
+}
+.result-card:hover {
+	box-shadow: 0 0 15px black;
+	translate: 0 -5px;
+}
+
+.result-title {
+	font-size: 28px;
+}
+.result-label {
+	font-size: 20px;
 }
