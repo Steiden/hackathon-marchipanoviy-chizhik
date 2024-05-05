@@ -8,26 +8,28 @@
 	</head>
 	<body>
 		<header class="header">
-			<span className="logo">
-				<img className="logo__image" src="/imag/orig.webp" alt="Логотип" />
+			<span class="logo">
+				<img class="logo__image" src="./img/orig.webp" alt="Логотип" />
 			</span>
 		</header>
-		<form class="search-container" id="searchForm">
-			<label for="query" class="search-res">Запрос:</label>
-			<input
-				name="query"
-				type="text"
-				id="query"
-				class="search-input"
-				placeholder="Введите запрос"
-				aria-label="Введите запрос"
-			/>
-			<button type="submit" id="searchBtn" class="search-button">Найти</button>
-		</form>
+		<main>
+			<form class="search-container" id="searchForm">
+				<label for="query" class="search-res">Запрос:</label>
+				<input
+					name="query"
+					type="text"
+					id="query"
+					class="search-input"
+					placeholder="Введите запрос"
+					aria-label="Введите запрос"
+				/>
+				<button type="submit" id="searchBtn" class="search-button">Найти</button>
+			</form>
 
-		<div id="results" class="results-container" role="region" aria-live="polite">
-			<!-- Результаты поиска будут отображены здесь -->
-		</div>
+			<div id="results" class="results-container" role="region" aria-live="polite">
+				<!-- Результаты поиска будут отображены здесь -->
+			</div>
+		</main>
 
 		<script src="scripts/index.js"></script>
 	</body>
