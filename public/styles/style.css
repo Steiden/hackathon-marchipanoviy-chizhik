@@ -54,12 +54,15 @@ body {
 
 .results-container {
 	display: grid;
-	grid-template: auto / repeat(3, 1fr);
+	grid-template: auto / repeat(2, 1fr);
 	gap: 20px;
 
 	padding: 10px;
 }
 .result-card {
+	display: flex;
+	gap: 20px;
+
 	border: 1px solid black;
 	border-radius: 10px;
 
@@ -77,6 +80,12 @@ body {
 	translate: 0 -5px;
 }
 
+.result-image {
+	width: 400px;
+	height: 300px;
+	background-color: white;
+	border-radius: 15px;
+}
 .result-title {
 	font-size: 28px;
 }

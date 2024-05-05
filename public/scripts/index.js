@@ -2,9 +2,13 @@ function generateResultCard(result) {
 	const card = document.createElement("div");
 	card.classList.add("result-card");
 	card.innerHTML = `
+      <div class="result-image"></div>
+      <div>
         <h3 class="result-title">${result.name}</h3>
         <p class="result-label">State: ${result.state_name}</p>
         <p class="result-label">Conutry: ${result.country_name}</p>
+      </div>
+
     `;
 	return card;
 }
