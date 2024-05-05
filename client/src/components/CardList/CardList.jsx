@@ -1,5 +1,5 @@
-import styles from "./CardList.module.scss";
-import { TypeCard } from "@/types";
+import styles from "./CardList.module.css";
+// import { TypeCard } from "@/types";
 import { Card } from "../Card/Card";
 
 // type TypeProps = {
