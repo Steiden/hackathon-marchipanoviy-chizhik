@@ -4,45 +4,15 @@
 	font-weight: normal;
 }
 body {
-	background: rgba(153, 102, 204, 1);
-	background: -moz-linear-gradient(
-		top,
-		rgba(153, 102, 204, 1) 0%,
-		rgba(146, 110, 174, 1) 53%,
-		rgba(117, 93, 154, 1) 100%
-	);
-	background: -webkit-gradient(
-		left top,
-		left bottom,
-		color-stop(0%, rgba(153, 102, 204, 1)),
-		color-stop(53%, rgba(146, 110, 174, 1)),
-		color-stop(100%, rgba(117, 93, 154, 1))
-	);
-	background: -webkit-linear-gradient(
-		top,
-		rgba(153, 102, 204, 1) 0%,
-		rgba(146, 110, 174, 1) 53%,
-		rgba(117, 93, 154, 1) 100%
-	);
-	background: -o-linear-gradient(
-		top,
-		rgba(153, 102, 204, 1) 0%,
-		rgba(146, 110, 174, 1) 53%,
-		rgba(117, 93, 154, 1) 100%
-	);
-	background: -ms-linear-gradient(
-		top,
-		rgba(153, 102, 204, 1) 0%,
-		rgba(146, 110, 174, 1) 53%,
-		rgba(117, 93, 154, 1) 100%
-	);
-	background: linear-gradient(
-		to bottom,
-		rgba(153, 102, 204, 1) 0%,
-		rgba(146, 110, 174, 1) 53%,
-		rgba(117, 93, 154, 1) 100%
-	);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9966cc', endColorstr='#755d9a', GradientType=0 );
+	font-family: 'Bergamasco Light';
+	margin: 0;
+	padding: 0;
+	background: #755d9a;
+	background: -webkit-linear-gradient(to left, #9966cc, #926eae, #755d9a);
+	background: linear-gradient(to left, #9966cc, #926eae, #755d9a);
+	min-width: 360px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 .search-container {
 	margin: 20px;
