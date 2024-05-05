@@ -67,6 +67,10 @@ body {
 	overflow: hidden;
 
 	transition-duration: .3s;
+
+	background: linear-gradient(45deg, #ff8a00, #e52e71, #8a2be2, #4b0082);
+	background-size: 400% 400%;
+	animation: gradientAnimation 15s ease infinite;
 }
 .result-card:hover {
 	box-shadow: 0 0 15px black;
@@ -78,4 +82,17 @@ body {
 }
 .result-label {
 	font-size: 20px;
+}
+
+
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
