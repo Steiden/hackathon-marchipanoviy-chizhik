@@ -1,81 +1,162 @@
 @font-face {
-	font-family: 'Bergamasco Light';
-	src: url("../fonts/ofont.ru_Bergamasco.ttf");
-	font-weight: normal;
+    font-family: "Bergamasco Light";
+    src: url("../fonts/ofont.ru_Bergamasco.ttf");
+    font-weight: normal;
 }
 body {
-	font-family: 'Bergamasco Light';
-	margin: 0;
-	padding: 0;
+    font-family: "Bergamasco Light";
+    margin: 0;
+    padding: 0;
 
-	background: -webkit-linear-gradient(to left, #c881d9, #d98192, #8192d9);
-	background: linear-gradient(to left, #c881d9, #d98192, #8192d9);
-	min-width: 360px;
-	max-width: 1200px;
-	margin: 0 auto;
+    background: -webkit-linear-gradient(to left, #c881d9, #d98192, #8192d9);
+    background: linear-gradient(to left, #c881d9, #d98192, #8192d9);
+    /* min-width: 360px; */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .container {
-	max-width: 1200px;
-	margin-block: 50px;
-	padding-inline: 20px;
+    max-width: clamp(400px, 100%, 1200px);
+    margin-block: 50px;
+    padding-inline: 20px;
 }
 
 .logo__image {
-	width: 100px;
-	aspect-ratio: 1;
-	border-radius: 25%;
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 25%;
+}
+
+.aoa {
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 25%;
+	object-fit: cover;
 }
 
 .search-container {
-	margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
 }
 .search-res {
-	font-family: 'Bergamasco Light';
+    font-family: "Bergamasco Light";
 }
 .search-input {
-	font-family: 'Bergamasco Light';
-	padding: 10px;
-	margin-right: 10px;
-	width: calc(50% - 15px);
-	border: 1px solid #81bed9;
-	border-radius: 5px;
+    font-family: "Bergamasco Light";
+    padding: 10px;
+    margin-right: 10px;
+    width: calc(50% - 15px);
+    border: 1px solid #81bed9;
+    border-radius: 5px;
 }
 
 .search-button {
-	font-family: 'Bergamasco Light';
-	padding: 10px 20px;
-	border: none;
-	background-color: #c881d9;
-	color: #fff;
-	border-radius: 5px;
-	cursor: pointer;
+    font-family: "Bergamasco Light";
+    padding: 10px 20px;
+    border: none;
+    background-color: #c881d9;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .results-container {
-	display: grid;
-	grid-template: auto / repeat(3, 1fr);
-	gap: 20px;
+    display: grid;
+    grid-template: auto / repeat(2, 1fr);
+    gap: 20px;
 
-	padding: 10px;
+    padding: 10px;
 }
 .result-card {
-	border: 1px solid black;
-	border-radius: 10px;
+    display: flex;
+    gap: 20px;
 
-	padding: 15px;
-	overflow: hidden;
+    border: 1px solid black;
+    border-radius: 10px;
 
-	transition-duration: .3s;
+    padding: 15px;
+    overflow: hidden;
+
+    transition-duration: 0.3s;
+
+    background: linear-gradient(45deg, #ff8a00, #e52e71, #8a2be2, #4b0082);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
 }
 .result-card:hover {
-	box-shadow: 0 0 15px black;
-	translate: 0 -5px;
+    box-shadow: 0 0 15px black;
+    translate: 0 -5px;
 }
 
+.result-image {
+    width: clamp(150px, 30vw, 400px);
+    aspect-ratio: 1.5;
+    background-color: white;
+    border-radius: 15px;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 240, 240, 1) 41%,
+        rgba(0, 0, 0, 0.3786764705882353) 51%,
+        rgba(255, 255, 255, 1) 60%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s linear infinite;
+}
 .result-title {
-	font-size: 28px;
+    font-size: 28px;
 }
 .result-label {
-	font-size: 20px;
+    font-size: 20px;
+}
+
+.logo1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: #000c12;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    background-color: #000c12;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .results-container {
+        grid-template: auto / 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .result-card {
+        flex-direction: column;
+    }
 }
