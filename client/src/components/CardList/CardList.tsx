@@ -24,6 +24,15 @@ export const CardList = ({ cards }: TypeProps) => {
 					/>
 				))}
 			</div>
+			<Card
+				name="Россия"
+				phone_code={123}
+				capital="Москва"
+				region="Евразия"
+				subregion="Европа"
+				nationality="Русы"
+				timezones={[{ gmtOffsetName: "UTC+03:00", zoneName: "UTC+03:00" }]}
+			/>
 		</>
 	);
 };
