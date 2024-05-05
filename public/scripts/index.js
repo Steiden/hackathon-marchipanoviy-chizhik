@@ -18,14 +18,20 @@ async function handleFormSubmit(event) {
 
   try {
     const formData = new FormData(event.target);
+    let query = formData.get("query");
 
     const response = await fetch("/search", {
       method: "POST",
-      body: formData,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: query,
+      }),
     });
 
     if (!response.ok) {
-      throw new Error("Ошибка при отправке запроса: " + response.status);
+      throw new Error("Error sending request: " + response.status);
     }
 
     const data = await response.json();
