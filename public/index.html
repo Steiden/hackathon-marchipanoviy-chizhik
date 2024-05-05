@@ -7,9 +7,21 @@
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body>
+		<header class="header">
+			<span className="logo">
+				<img className="logo__image" src="/imag/orig.webp" alt="Логотип" />
+			</span>
+		</header>
 		<form class="search-container" id="searchForm">
 			<label for="query" class="search-res">Запрос:</label>
-			<input name="query" type="text" id="query" class="search-input" placeholder="Введите запрос" aria-label="Введите запрос" />
+			<input
+				name="query"
+				type="text"
+				id="query"
+				class="search-input"
+				placeholder="Введите запрос"
+				aria-label="Введите запрос"
+			/>
 			<button type="submit" id="searchBtn" class="search-button">Найти</button>
 		</form>
 
