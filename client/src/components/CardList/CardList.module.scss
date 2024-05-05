@@ -1,4 +1,5 @@
-.resultsContainer {
+.results-container {
     display: grid;
     grid-template: auto / repeat(3, 1fr);
+    gap: 20px;
 }
