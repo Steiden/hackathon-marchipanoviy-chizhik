@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Card/Card.jsx", "src/components/CardList/CardList.jsx", "src/api/config.js", "src/app/layout.jsx", "src/types/index.js", "src/app/page.jsx"],
   "exclude": ["node_modules"]
 }
