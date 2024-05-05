@@ -1,17 +1,17 @@
-import styles from "./CardList.module.scss";
-import { TypeCard } from "@/types";
+import styles from "./CardList.module.css";
+// import { TypeCard } from "@/types";
 import { Card } from "../Card/Card";
 
-type TypeProps = {
-	cards: TypeCard[];
-};
+// type TypeProps = {
+// 	cards: TypeCard[];
+// };
 
-export const CardList = ({ cards }: TypeProps) => {
+export const CardList = ({ cards }) => {
 	return (
 		<>
 			<h2>Карточки</h2>
 			<div id="results" className={styles["results-container"]} role="region" aria-live="polite">
-				{cards.map((card: TypeCard) => (
+				{cards.map((card) => (
 					<Card
 						key={card.name}
 						name={card.name}
