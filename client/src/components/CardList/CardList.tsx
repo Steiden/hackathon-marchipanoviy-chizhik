@@ -10,7 +10,7 @@ export const CardList = ({ cards }: TypeProps) => {
 	return (
 		<>
 			<h2>Карточки</h2>
-			<div id="results" className={styles.resultsContainer} role="region" aria-live="polite">
+			<div id="results" className={styles["results-container"]} role="region" aria-live="polite">
 				{cards.map((card: TypeCard) => (
 					<Card
 						key={card.name}
