@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Bergamasco Light';
-	src: url(/fonts/ofont.ru_Bergamasco);
+	src: url("../fonts/ofont.ru_Bergamasco.ttf");
 	font-weight: normal;
 }
 body {
