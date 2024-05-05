@@ -92,7 +92,7 @@ body {
 
 	background: rgb(255, 255, 255);
 	background: linear-gradient(
-		90deg,
+		45deg,
 		rgba(255, 255, 255, 1) 0%,
 		rgba(255, 240, 240, 1) 41%,
 		rgba(0, 0, 0, 0.3786764705882353) 51%,
@@ -100,7 +100,7 @@ body {
 		rgba(255, 255, 255, 1) 100%
 	);
 	background-size: 400% 400%;
-	animation: gradientAnimation 2s linear infinite;
+	animation: gradientAnimation 5s linear infinite;
 }
 .result-title {
 	font-size: 28px;
